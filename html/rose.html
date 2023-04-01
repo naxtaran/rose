@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>RoseProfile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+
+        .rose {
+            background-color: #fff;
+            padding-left: 16px;
+
+        }
+
+        .work,
+        .kleur,
+        .logos,
+        .merry,
+        .aliza,
+        .dutch,
+        .louie-coffe,
+        .dog,
+        .loavies {
+            display: none;
+        }
+
+        .rose-title {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        .name {
+            display: inline-block;
+            font-size: 1.6rem;
+            text-align: center;
+            background-color: #ddd;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .name p {
+            font-size: 2.8rem;
+        }
+
+        .scroll {
+            font-size: 1.6rem;
+            color: #bbb;
+            margin-top: 64px;
+        }
+
+        .book-pic {
+            width: 100%;
+            margin: 16px 0;
+        }
+
+        .logo-pic {
+            width: 100%;
+        }
+
+        .power {
+            color: #bbb;
+            font-size: 2rem;
+            text-align: center;
+            margin: 16px 0;
+        }
+
+        /*******************media 600 **************/
+        @media (min-width:600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rose-name-pics {
+                display: flex;
+                justify-content: center;
+
+            }
+            .work,
+            .kleur,
+            .logos,
+            .merry,
+            .aliza,
+            .dutch,
+            .louie-coffe,
+            .dog,
+            .loavies {
+                display: flex;
+            }
+
+            .pics-and-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+            }
+
+            .name {
+                width: 75%;
+            }
+
+            .pics {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .first-pics-row,
+            .second-pics-row,
+            .third-pics-row,
+            .fourth-pics-row {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 25%;
+
+            }
+
+            .logo-pic,
+            .book-pic {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        /*********************media 900 ***************/
+        @media (min-width:900px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .work,
+            .kleur,
+            .logos,
+            .merry,
+            .aliza,
+            .dutch,
+            .louie-coffe,
+            .dog,
+            .loavies,.contact {
+                display: flex;
+                font-size: 2.4rem;
+            }
+
+            .pics-and-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            .pics {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .first-pics-row,
+            .second-pics-row,
+            .third-pics-row,
+            .fourth-pics-row,
+                {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-left: 15%;
+
+            }
+
+            .logo-pic,
+            .book-pic,
+                {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rose-name-pics">
+            <div class="rose">
+                <h1 class="rose-title">Rose van der Ende</h1>
+                <p class="work">work</p>
+                <p class="kleur">Kleur & Theorie - Book Design</p>
+                <p class="logos">Logos & Marks - Logofolio</p>
+                <p class="merry">The Merry Moore - Branding</p>
+                <p class="aliza">Aliza Levi Interiors - Branding</p>
+                <p class="dutch">Masterly - The Dutch in Milano</p>
+                <p class="louie-coffe">Louie Coffee - Branding</p>
+                <p class="dog">Dogwood - Branding</p>
+                <p class="loavies">Loavies Newsletter Design</p>
+                <p class="contact">Contact</p>
+                   <span class="material-symbols-outlined">
+                nest_heat_link_gen_3
+            </span>
+            </div>
+
+            <div class="pics-and-name">
+                <div class="name">
+                    <p>My name is Rose van der Ende and I'm a passionate graphic designer. Within my designs I value simplicity, symmetry and detail. Whether I'm designing books, branding, packaging or websites I always strive for beauty and balance.</p>
+                    <p class="scroll">Scroll down to see my work</p>
+                </div>
+                <div class="pics">
+                    <div class="first-pics-row">
+                        <img class="book-pic" src="../images/rose.jpg" alt="rose">
+                        <img class="logo-pic" src="../images/logo.jpg" alt="logo">
+                    </div>
+                    <div class="second-pics-row">
+                        <img class="book-pic" src="../images/brand.jpg" alt="rose">
+                        <img class="logo-pic" src="../images/aliza.jpg" alt="logo">
+                    </div>
+                    <div class="third-pics-row">
+                        <img class="book-pic" src="../images/milano.jpg" alt="rose">
+                        <img class="logo-pic" src="../images/coffe.jpg" alt="logo">
+                    </div>
+                    <div class="fourth-pics-row">
+                        <img class="book-pic" src="../images/dogwood.jpg" alt="rose">
+                        <img class="logo-pic" src="../images/design.jpg" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon"><span class="material-symbols-outlined">
+                nest_heat_link_gen_3
+            </span></div>
+        <div class="contact">
+            <p class="power">Powered by Adobe Portfolio</p>
+        </div>
+    </div>
+
+</body></html>
